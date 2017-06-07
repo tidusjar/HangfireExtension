@@ -200,7 +200,7 @@ namespace Hangfire.SQLite
             if (isWriteLock)
             {
                 //_dbMonitorCache[_connectionString].AcquireWriterLock(ReaderWriterLockTimeout);
-                _dbMonitorCache[_connectionString].TryEnterReadLock(ReaderWriterLockTimeout);
+                _dbMonitorCache[_connectionString].TryEnterWriteLock(ReaderWriterLockTimeout);
             }
 
             var connection = new SqliteConnection(_connectionString);

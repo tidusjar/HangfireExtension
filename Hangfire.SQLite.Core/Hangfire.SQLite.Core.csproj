@@ -3,11 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
     <Authors>TidusJar</Authors>
-    <Description>Hanfgire.Sqlite extension for .Net Core</Description>
+    <Description>Hangfire.Sqlite extension for .Net Core</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageReleaseNotes>Fixed a the readwrite lock</PackageReleaseNotes>
     <Copyright>Copyright 2017 (c) TidusJar. All rights reserved.</Copyright>
     <PackageTags>hangfire dotnetcore extensions</PackageTags>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <FileVersion>1.0.0.2</FileVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

@@ -43,7 +43,7 @@ namespace Hangfire.SQLite.Core
 
             var script = GetStringResource(
                 typeof(SQLiteObjectsInstaller).GetTypeInfo().Assembly, 
-                "Hangfire.SQLite.Install.sql");
+                "Hangfire.SQLite.Core.Install.sql");
 
             script = script.Replace("SET @TARGET_SCHEMA_VERSION = 5;", "SET @TARGET_SCHEMA_VERSION = " + RequiredSchemaVersion + ";");
 
