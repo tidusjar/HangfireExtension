@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <Authors>TidusJar</Authors>
+    <Description>Hanfgire.Sqlite extension for .Net Core</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <Copyright>Copyright 2017 (c) TidusJar. All rights reserved.</Copyright>
+    <PackageTags>hangfire dotnetcore extensions</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Install.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.2" />
+    <PackageReference Include="HangFire.Core" Version="1.6.12" />
+    <PackageReference Include="Microsoft.Data.SQLite" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>
